@@ -1,0 +1,95 @@
+
+.container {
+  width: 100%;
+  height: calc(100vh - 77px);
+  margin-top: 20px;
+  position: relative;
+
+  .imageContainer{
+    position: relative;
+
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: calc(100vh - 90px);
+      width: 100% ;
+      overflow: hidden;
+      border-radius: 40px;
+      opacity: 0.6;
+      background: rgba(0,0,0,.8);
+    }
+
+    .image {
+      background-image: url("../../assets/home_img.jpeg");
+      background-size: cover;
+      height: calc(100vh - 90px);
+      width: 100% ;
+      overflow: hidden;
+      border-radius: 40px;
+    }
+
+    .titleContainer {
+      color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .title{
+        max-width: 70%;
+
+        h1{
+          padding-left: 60px;
+          padding-top: 100px;
+          font-size: 50px;
+          font-weight: 400;
+          z-index: 999;
+        }
+      }
+
+      .paragraph{
+        max-width: 60%;
+
+        p{
+          padding-left: 60px;
+          font-size: 16px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  .checkoutContainer {
+    margin: 0 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .checkoutSection {
+      background-color: #FFFFFF;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 99;
+      position: relative;
+      top: -60px;
+      padding: 10px 30px;
+      gap: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.09);
+    }
+
+    .serchContainer{
+      width: 40px;
+      height: 40px;
+      background-color: #D11242;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+    }
+  }
+
+}
